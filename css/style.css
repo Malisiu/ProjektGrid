@@ -197,8 +197,8 @@ h1.company-name {
   z-index: 10;
 }
 .nav-mobile--active {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 .nav-desktop {
   display: none;
@@ -220,6 +220,10 @@ h1.company-name {
 }
 
 @media (min-width: 992px) {
+  h1.company-name {
+    font-size: 6rem;
+  }
+
   .header {
     grid-template-rows: auto repeat(2, 1fr);
   }
@@ -303,5 +307,13 @@ h1.company-name {
 
   .hamburger {
     display: none;
+  }
+}
+@media (min-width: 992px) {
+  .header__text p {
+    font-size: 2.2rem;
+  }
+  .header__img {
+    background-image: url("../img/header-img-big.jpg");
   }
 }/*# sourceMappingURL=style.css.map */
